@@ -1,5 +1,6 @@
 <template>
   <h2>{{ name }}</h2>
+  <p>Under construction!</p>
 </template>
 
 <script>
