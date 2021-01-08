@@ -6,8 +6,10 @@
 
 export default {
   name: 'App',
-  data: {
-    name: 'Johnrey Bacal'
+  data() {
+    return {
+      name: 'Johnrey Bacal'
+    };
   }
 }
 </script>
