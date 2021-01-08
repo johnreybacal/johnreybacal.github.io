@@ -1,11 +1,17 @@
 <template>
   <h2>{{ name }}</h2>
   <p>Under construction!</p>
+  <code-wars badge="large"></code-wars>
+  <code-wars badge="small"></code-wars>
+  <code-wars badge="micro"></code-wars>  
 </template>
 
 <script>
 
+import CodeWars from './profiles/CodeWars.vue';
+
 export default {
+  components: { CodeWars },
   name: 'App',
   data() {
     return {
