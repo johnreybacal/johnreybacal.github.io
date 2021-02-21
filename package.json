@@ -9,12 +9,10 @@
     "gh-pages-deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
-    "@popperjs/core": "^2.6.0",
-    "bootstrap": "^5.0.0-beta1",
     "core-js": "^3.6.5",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-recaptcha-v3": "^2.0.0",
+    "vue-router": "^4.0.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

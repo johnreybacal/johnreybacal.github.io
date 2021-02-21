@@ -1,33 +1,32 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import 'jquery'
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './assets/css/styles.css'
+import { createApp } from 'vue';
+import { createRouter, createWebHistory } from 'vue-router';
+import { VueReCaptcha } from 'vue-recaptcha-v3';
+
+import App from './App.vue';
+import IndexContainer from './containers/IndexContainer.vue';
+import ArtsContainer from './containers/ArtsContainer.vue';
+import TipsContainer from './containers/TipsContainer.vue';
+import MoreContainer from './containers/MoreContainer.vue';
+
+import './assets/bootstrap-4.3.1-dist/css/bootstrap.min.css';
+import './assets/fontawesome-free-5.13.0-web/css/all.min.css';
+import './assets/css/style.css';
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes: [
+        { path: '/', component: IndexContainer },
+        { path: '/arts', component: ArtsContainer },
+        { path: '/tips', component: TipsContainer },
+        { path: '/more', component: MoreContainer },
+        { path: '/:notFound(.*)', redirect: '/' }
+    ],
+    linkActiveClass: 'current-page'
+});
 
 const app = createApp(App);
 
+app.use(router);
+app.use(VueReCaptcha, { siteKey: '6LdTJmEaAAAAAPzK4Ywnckd_wTtwX0xsmIkpvNYQ' })
+
 app.mount('#app');
-
-// const triggers = Array.from(document.querySelectorAll('[data-toggle="collapse"]'));
-
-// window.addEventListener('click', (ev) => {
-//   const elm = ev.target;
-//   if (triggers.includes(elm)) {
-//     const selector = elm.getAttribute('data-target');
-//     collapse(selector, 'toggle');
-//   }
-// }, false);
-
-
-// const fnmap = {
-//   'toggle': 'toggle',
-//   'show': 'add',
-//   'hide': 'remove'
-// };
-// const collapse = (selector, cmd) => {
-//   const targets = Array.from(document.querySelectorAll(selector));
-//   targets.forEach(target => {
-//     target.classList[fnmap[cmd]]('show');
-//   });
-// }
