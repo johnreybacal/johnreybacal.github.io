@@ -10,9 +10,9 @@
     <div class="row mb-5 center-div">
         <ul class="mx-auto" v-if="showMore">
             <li>Hello, fellow human. You can contact me thru:</li>
-            <li><i class="fa fa-envelope fa-fw"></i>&nbsp; johnrey.bacal@yahoo.com</li>
+            <li><i class="fa fa-envelope fa-fw"></i>&nbsp; <a href="mailto:johnrey.bacal@yahoo.com">johnrey.bacal@yahoo.com</a></li>
             <li>
-                <i class="fa fa-mobile-alt fa-fw"></i>&nbsp; +639 770110623
+                <i class="fa fa-mobile-alt fa-fw"></i>&nbsp; +63 977 011 0623
                 <span class="badge badge-danger">
                     Please don't call me. Just text, thanks.
                 </span>
