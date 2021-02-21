@@ -47,10 +47,7 @@ export default {
             const verifyUrl = 'https://www.google.com/recaptcha/api/siteverify?secret=verify_me&response=' + token;
             fetch(verifyUrl, {
                 method: 'POST', 
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
-                    'Access-Control-Allow-Origin': 'https://johnreybacal.github.io/'
-                },
+                mode: 'no-cors',
             }).then(response => {
                 console.log(response);
                 if (response.success == true) {
