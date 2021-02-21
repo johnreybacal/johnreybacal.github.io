@@ -16,9 +16,9 @@
         </p>
     </div>
     <div class="row mb-5 educ-work">
-        <div class="col-md-12 col-lg-6">
+        <div class="col-md-12 col-lg-5">
             <h4>Educational Attainment</h4>
-            <table class="table-sm table-striped">
+            <table class="table-sm table-striped table-responsive-stack">
                 <tbody>
                     <tr v-for="educationalAttainment in educationalAttainments" :key="educationalAttainment">
                         <td>{{ educationalAttainment.school }}</td>
@@ -28,9 +28,9 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-md-12 col-lg-6">
+        <div class="col-md-12 col-lg-7">
             <h4>Work Experience</h4>
-            <table class="table-sm table-striped">
+            <table class="table-sm table-striped table-responsive-stack">
                 <tbody>
                     <tr v-for="workExperience in workExperiences" :key="workExperience">
                         <td><a :href="workExperience.website">{{ workExperience.company }}</a></td>

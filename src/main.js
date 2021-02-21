@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import { VueReCaptcha } from 'vue-recaptcha-v3';
+import VueSlimScroll from 'vue-slimscroll';
 
 import App from './App.vue';
 import IndexContainer from './containers/IndexContainer.vue';
@@ -28,5 +29,6 @@ const app = createApp(App);
 
 app.use(router);
 app.use(VueReCaptcha, { siteKey: '6LdTJmEaAAAAAPzK4Ywnckd_wTtwX0xsmIkpvNYQ' })
+app.use(VueSlimScroll);
 
 app.mount('#app');

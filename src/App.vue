@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid" v-slimscroll>
     <navigation-bar></navigation-bar>
     <router-view></router-view>
   </div>

@@ -104,7 +104,27 @@ footer div p {
     color: #E8DDCB;
 }
 
-@media screen and (max-width: 770px) {
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #033649;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #22a19f; 
+}
+  
+@media screen and (max-width: 768px) {
     #breadcrumbs {
         text-align: left;
     }
@@ -117,4 +137,42 @@ footer div p {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .table-responsive-stack tr {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+      
+      
+    .table-responsive-stack td,
+    .table-responsive-stack th {
+        display:block;
+    /*      
+        flex-grow | flex-shrink | flex-basis   */
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+      }
+      
+    .table-responsive-stack .table-responsive-stack-thead {
+        font-weight: bold;
+    }
+    .table-responsive-stack tr {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        border-bottom: 1px solid #E8DDCB;
+        display:block;   
+    }
+    /*  IE9 FIX   */
+    .table-responsive-stack td {
+        float: left\9;
+        width:100%;
+    }
 }
+  
+  
