@@ -46,9 +46,10 @@ export default {
             // Do stuff with the received token.
             const verifyUrl = 'https://www.google.com/recaptcha/api/siteverify?secret=verify_me&response=' + token;
             fetch(verifyUrl, {
-                method: "POST", 
+                method: 'POST', 
                 headers: {
-                    "Content-Type": "application/x-www-form-urlencoded; charset=utf-8"
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+                    'Access-Control-Allow-Origin': 'https://johnreybacal.github.io/'
                 },
             }).then(response => {
                 console.log(response);
