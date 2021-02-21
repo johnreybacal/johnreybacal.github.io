@@ -44,13 +44,14 @@ export default {
             const token = await this.$recaptcha('login')
         
             // Do stuff with the received token.
-            fetch("https://www.google.com/recaptcha/api/siteverify", {
+            const verifyUrl = 'https://www.google.com/recaptcha/api/siteverify?secret=verify_me&response=' + token;
+            fetch(verifyUrl, {
                 method: "POST", 
-                body: JSON.stringify({
-                    action: "verify",
-                    token: token
-                })
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded; charset=utf-8"
+                },
             }).then(response => {
+                console.log(response);
                 if (response.success == true) {
                     this.showMore = true;
                 }
