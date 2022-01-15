@@ -1,0 +1,108 @@
+body {
+    background-color: #E8DDCB;
+    color: #031634;
+}
+a {
+    color: #036564;
+}
+ul {
+    list-style: none;
+    padding-left: 15px;
+}
+ol {
+    padding-left: 15px;
+}
+th, td {
+    padding-left: 0px !important;
+}
+.container-fluid {
+    padding-top: 15px;
+}
+.current-page {
+    font-weight: bold;
+}
+.center-div {
+    margin-left: 7.45%;
+    margin-right: 7.45%;
+}
+.center-paragraph {
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+#breadcrumbs {
+    text-align: right;
+}
+footer div p {
+    text-align: center;
+}
+
+#selfie-img-container {
+    width: 100%;
+    background-color: #500F19;
+}
+#selfie-img {
+    margin: 20px;
+    width: 200px;
+}
+.educ-work {
+    background-color: #031634;
+    color: #E8DDCB;
+}
+.educ-work .table-sm {
+    color: #E8DDCB;
+    width: 100%;
+}
+.educ-work div {
+    padding: 15px 30px;
+}
+
+#art-container {
+    padding: 15px;
+    background-color: #031634;
+}
+.art-img {
+    width: 100%;
+    transition: transform .2s;
+}
+.art-img:hover {
+    z-index: 99;
+    transform: scale(1.05);
+}
+
+#gold-container {
+    padding: 15px;
+    background-color: gold;
+}
+#gossip-container {
+    padding: 15px;
+    background-color: #031634;
+    color: #E8DDCB;
+}
+
+#break-container {
+    padding: 15px;
+    background-color: #033649;
+    color: #E8DDCB;
+}
+
+#more-container {
+    padding: 15px;
+    background-color: #036564;
+    color: #E8DDCB;
+}
+
+@media screen and (max-width: 770px) {
+    #breadcrumbs {
+        text-align: left;
+    }
+    .center-div {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .center-paragraph {
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
